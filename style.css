@@ -40,6 +40,10 @@ hr{
     font-style: italic;
 }
 
+.nBar img{
+    display: none;
+}
+
 .logop{
     padding: 0px 20px 0px 20px;
     margin: 0px;
@@ -201,21 +205,76 @@ h3{
 
 
 
-.social{
-    display: flex;
-}
 
 .social h1{
     margin-top: 0px;
+    text-align: center;
+}
+
+.taskmainbox{
+    display: flex;
+    background-color: #30475E;
+    width: 90%;
+    height: 500px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.taskmainboxbox{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.taskmainbox .box1{
+    display: flex;
+    padding: 20px 0 20px 0;
+    margin: 20px 20px 20px 20px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 10px 10px;
+}
+
+.taskmainbox:hover{
+    transform: scale(1.02);
+}
+
+.box1:hover{
+    box-shadow: #F05454 5px 5px;
+    transform: scale(1.05);
+}
+
+.boxbox{
+    margin: 10px;
+    background-color: #ffffff;
+}
+
+.box1 img, .box1 video{
+    display: flex;
+    width: 150px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 
+.links img{
+    display: inline;
+    width: 30px;
+}
 
+.linkimage{
+    margin-left: auto;
+    margin-right: auto;
+}
 
-
-
+.links{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -288,6 +347,10 @@ button{
     background-color: #30475E;
     color: white;
     font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
 
 footer{
@@ -368,3 +431,166 @@ footer .fline{
 }
 
 
+@media only screen and (max-width: 600px) {
+body{
+    width: fit-content;
+}
+
+    .nBar .list{
+        display: none;
+    }
+
+    .nBar{
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nBar img{
+        display: block;
+        width: 100px;
+        margin-left: auto;
+    }
+
+    .logo{
+        font-size: 80px;
+    }
+
+
+    .banner .photo img{
+        width: 800px;
+        max-width: 750px;
+    }
+
+
+    .banner{
+        display: block;
+    }
+    .line{
+        height: 0px;
+    }
+
+    .text{
+        padding-left: 50px;
+    }
+
+    .redbox{
+        max-width: fit-content;
+    }
+
+    .redbox h3{
+        width: 370px;
+    }
+
+    .box3{
+        display: none;
+    }
+
+    .taskmainbox{
+        height: fit-content;
+    }
+
+    .taskmainboxbox{
+        display: inline-block;
+    }
+
+    .b4 img{
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .sociallinks{
+        padding: 350px 0 0 350px;
+    }
+
+    .text p{
+
+    font-size: 40px;
+}   
+    .text h1{
+     font-size: 80px;
+     margin:  0;
+    }
+
+    .banner .Sline{
+    height: 550px;
+    width: 2px;
+    padding-top: 80px;
+    margin-top: 0;
+    }
+
+    footer .footer1{
+    text-align: center;
+    display: block;
+    }
+
+    .logop{
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    ul{
+        padding-left: 0;
+    }
+    li{
+        list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .taskmainbox .box1{
+        width: 90%;
+    }
+
+    .box1 img, .box1 video{
+        width: 80%;
+    }
+
+    .links img{
+        padding: 10px;
+        width: 60px;
+    }
+
+    .links p{
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 40px;
+        margin: 10px;
+    }
+
+    h2{
+        color: #F05454;
+    }
+
+    .boxbox p, .boxbox h4, .boxbox h2, .boxbox .links{
+        margin-left: 50px;
+        width: 90%;
+    }
+
+    .logop p{
+        font-size: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .b2 h2, .b3 h2{
+        font-size: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .b2 a, .b3 a{
+        font-size: 30px;
+    }
+
+    .b4 img{
+       width: 80px;
+       height: 80px;
+       margin: 15px;
+    }
+
+}
