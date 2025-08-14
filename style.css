@@ -444,7 +444,6 @@ body{
         width: fit-content;
         height: fit-content;
         text-align: center;
-        gap: 20px;
     }
 
     .nBar img{
@@ -682,5 +681,6 @@ body{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
 
 }
