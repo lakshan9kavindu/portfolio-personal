@@ -479,9 +479,6 @@ body{
         max-width: fit-content;
     }
 
-    .redbox h3{
-        width: 370px;
-    }
 
     .box3{
         display: none;
@@ -541,7 +538,9 @@ body{
     }
 
     .taskmainbox .box1{
-        width: 90%;
+        width: 95%;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .box1 img, .box1 video{
@@ -591,6 +590,97 @@ body{
        width: 80px;
        height: 80px;
        margin: 15px;
+    }
+
+    .myphotoimg img{
+        display: none;
+    }
+
+    .mainbox{
+        width: 700px;
+
+    }
+
+    .redbox{
+        border-radius: 50px;
+        margin: 20px;
+        text-align: center;
+        
+    }
+
+    .sociallinks{
+        padding: 0;
+        padding-top: 300px;
+        display: flex;
+    }
+
+    .sociallinks .b4 img{
+    margin: 10px;   
+ }
+
+ .sociallinks .b4{
+    display: flex;
+            margin-right: auto;
+        margin-left: auto;
+ }
+
+    .redbox h3, .redbox h2, .redbox h1{
+        margin-left: 0;
+    }
+
+    .social h1{
+        font-size: 60px;
+    }
+
+    .redbox h3{
+        font-size: 40px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .flexbox{
+        display: block;
+        width: fit-content;
+    }
+
+
+    input[type=text], select, input[type=email], textarea, input[type=number], input[type=button], input[type=password]{
+        display: flex;
+        height: 60px;
+        width: 400px;
+        margin-bottom: 30px;
+
+    }
+
+    label{
+        padding-top: 120px;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    form{
+        width: fit-content;
+    }
+
+    .formbox h1{
+        font-size: 50px;
+    }
+
+    button{
+        margin-top: 50px;
+        font-size: 40px;
+        padding: 40px;
+        border-radius: 30px;
+    }
+
+    form br{
+        display: none;
+    }
+
+    .g2 .g1{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }
