@@ -13,15 +13,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuList = document.querySelector(".nBar .list");
 
     if (menuIcon && menuList) {
-        menuIcon.addEventListener("click", function () {
+        // Open/close menu when clicking the icon
+        menuIcon.addEventListener("click", function (event) {
             menuList.classList.toggle("show");
+            event.stopPropagation(); // Prevent triggering document click
         });
 
-        // Optional: close menu when clicking a link
+        // Close menu when clicking a link
         menuList.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", function () {
                 menuList.classList.remove("show");
             });
+        });
+
+        // Close menu when clicking outside the menu
+        document.addEventListener("click", function (event) {
+            if (menuList.classList.contains("show") &&
+                !menuList.contains(event.target) && 
+                event.target !== menuIcon) {
+                menuList.classList.remove("show");
+            }
+        });
+
+        // Prevent clicks inside the menu from closing it
+        menuList.addEventListener("click", function (event) {
+            event.stopPropagation();
         });
     }
 });
