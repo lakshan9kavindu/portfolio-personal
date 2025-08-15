@@ -614,9 +614,47 @@ form{
 
 .nBar .list.show {
     display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.nBar .list.show ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nBar .list.show li {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.nBar .list.show a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nBar .list.show a:hover {
+    color: #ff4444;
+}
 }
 
 
 
     
+
 }
