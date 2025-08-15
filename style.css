@@ -476,6 +476,7 @@ a button{
         display: block;
         width: 40px;
         margin-left: auto;
+        z-index: 1000;
     }
 
     .nBar .list{
@@ -545,7 +546,7 @@ input[type=text], select, input[type=email], textarea, input[type=number], input
 }
 
 form{
-    width: 100%;
+    width: fit-content;
 }
 
 
@@ -611,45 +612,69 @@ form{
         margin-bottom: 10px;
     }
 
-.nBar .list {
-    display: none;
-}
+    .nBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #D9D9D9;
+    }
 
-.nBar .list.show {
-    display: flex; /* Only one display rule */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Full screen menu */
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-}
 
-.nBar .list.show ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+    .nBar .logo p {
+        margin: 0;
+        font-size: 1.5rem;
+    }
 
-.nBar .list.show li {
-    margin: 20px 0;
-    font-size: 2rem;
-}
 
-.nBar .list.show a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
+    .menu-icon {
+        width: 30px;
+        cursor: pointer;
+    }
 
-.nBar .list.show a:hover {
-    color: #ff4444;
-}
+
+    .list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(0,0,0,0.9);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+
+    .list.show {
+        display: flex;
+    }
+
+    .list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .list li {
+        margin: 20px 0;
+        font-size: 1rem;
+        color: #D9D9D9;
+    }
+
+    .list a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .list a:hover {
+        color: #ff4444;
+    }
+
 
 
 }
@@ -691,7 +716,7 @@ form{
     .logop p{
         font-size: 30px;
     }
-}
+
 
 
 }
