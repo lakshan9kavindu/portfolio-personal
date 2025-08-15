@@ -431,56 +431,128 @@ footer .fline{
 }
 
 
+
 @media only screen and (max-width: 600px) {
-body{
-    width: fit-content;
-}
+    .banner{
+        display: block;
+    }
+
+    .banner .text{
+        margin-top: 50px;
+    }
+
+    .mainbox{
+        width: 90%;
+    }
+
+    .aboutme{
+        width: 90%;
+                display: flex;
+
+    }
+
+    .redbox{
+        display: block;
+        text-align: center;
+        width: 85%;
+        margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    }
+
+    .redbox h1, .redbox h3, .redbox h2{
+        margin-left: 0;
+        margin: 10px 0 10px 0;
+    }
+
+    .nBar{
+        width:300px;
+    }
+
+    .nBar img{
+        display: block;
+        width: 40px;
+        margin-left: auto;
+    }
 
     .nBar .list{
         display: none;
     }
 
-    .nBar{
-        width: fit-content;
-        height: fit-content;
+    .line{
+        display: none;
+    }
+
+    .myphotoimg img{
+        display: none;
+    }
+
+    .sociallinks{
+            margin-left: auto;
+    margin-right: auto;
+        display: inline;
+        padding: 0;
+        padding-top: 350px;
+    }
+
+
+    footer .footer1, .footer2{
+        display: block;
         text-align: center;
     }
 
-    .nBar img{
-        display: block;
-        width: 100px;
+    .logop{
+            margin-left: auto;
+    margin-right: auto;
+
+    }
+
+    .logop p{
+        font-size: 30px;
+    }
+
+        ul{
+        padding-left: 0;
+    }
+
+        li{
+        list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .b4 img{
+        width: 30px;
+        margin: 2px;
+        height: auto;
+    }
+
+
+.fline p{
+    font-size: 10px;
+}
+.flexbox{
+    display: block;
+}
+
+input[type=text], select, input[type=email], textarea, input[type=number], input[type=button], input[type=password]{
+    width: 200px;
         margin-left: auto;
-    }
+    margin-right: auto;
+}
 
-    .logo{
-        font-size: 80px;
-    }
-
-
-    .banner .photo img{
-        width: 800px;
-        max-width: 750px;
-    }
+form{
+    width: 100%;
+}
 
 
-    .banner{
-        display: block;
-    }
-    .line{
-        height: 0px;
-    }
+.footer2 .b4 img{
+    margin: 5px;
+    width: 30px;
+    height: auto;
+}
+    button{
 
-    .text{
-        padding-left: 50px;
-    }
-
-    .redbox{
-        max-width: fit-content;
-    }
-
-
-    .box3{
-        display: none;
     }
 
     .taskmainbox{
@@ -488,56 +560,12 @@ body{
     }
 
     .taskmainboxbox{
-        display: inline-block;
+        display: block;
+        width: 90%;
     }
 
-    .b4 img{
-        margin: 5px;
-        width: 40px;
-        height: 40px;
-    }
-
-    .sociallinks{
-        padding: 350px 0 0 350px;
-    }
-
-    .text p{
-
-    font-size: 40px;
-}   
-    .text h1{
-     font-size: 80px;
-     margin:  0;
-    }
-
-    .banner .Sline{
-    height: 550px;
-    width: 2px;
-    padding-top: 80px;
-    margin-top: 0;
-    }
-
-    footer .footer1{
-    text-align: center;
-    display: block;
-    }
-
-    .logop{
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-    ul{
-        padding-left: 0;
-    }
-    li{
-        list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-    .taskmainbox .box1{
-        width: 95%;
+  .taskmainbox .box1{
+        width: 85%;
         margin-bottom: 50px;
         margin-top: 50px;
     }
@@ -548,139 +576,29 @@ body{
 
     .links img{
         padding: 10px;
-        width: 60px;
+        width: 40px;
     }
 
     .links p{
-        font-size: 30px;
+        font-size: 15px;
     }
-
+    
     h4{
-        font-size: 40px;
+        font-size: 20px;
         margin: 10px;
     }
 
-    h2{
+    .boxbox h2{
+        font-size: 15px;
         color: #F05454;
     }
 
-    .boxbox p, .boxbox h4, .boxbox h2, .boxbox .links{
-        margin-left: 50px;
-        width: 90%;
-    }
 
-    .logop p{
-        font-size: 80px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .b2 h2, .b3 h2{
-        font-size: 50px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .b2 a, .b3 a{
-        font-size: 30px;
-    }
-
-    .b4 img{
-       width: 80px;
-       height: 80px;
-       margin: 15px;
-    }
-
-    .myphotoimg img{
-        display: none;
-    }
-
-    .mainbox{
-        width: 700px;
-
-    }
-
-    .redbox{
-        border-radius: 50px;
-        margin: 20px;
-        text-align: center;
-        
-    }
-
-    .sociallinks{
-        padding: 0;
-        padding-top: 300px;
-        display: flex;
-    }
-
-    .sociallinks .b4 img{
-    margin: 10px;   
- }
-
- .sociallinks .b4{
-    display: flex;
-            margin-right: auto;
-        margin-left: auto;
- }
-
-    .redbox h3, .redbox h2, .redbox h1{
-        margin-left: 0;
-    }
-
-    .social h1{
-        font-size: 60px;
-    }
-
-    .redbox h3{
-        font-size: 40px;
-        color: white;
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-
-    .flexbox{
-        display: block;
-        width: fit-content;
-    }
-
-
-    input[type=text], select, input[type=email], textarea, input[type=number], input[type=button], input[type=password]{
-        display: flex;
-        height: 60px;
-        width: 400px;
-        margin-bottom: 30px;
-
-    }
-
-    label{
-        padding-top: 120px;
-        font-size: 20px;
-        margin-left: 20px;
-    }
-
-    form{
-        width: fit-content;
-    }
-
-    .formbox h1{
-        font-size: 50px;
-    }
-
-    button{
-        margin-top: 50px;
-        font-size: 40px;
-        padding: 40px;
-        border-radius: 30px;
-    }
-
-    form br{
-        display: none;
-    }
-
-    .g2 .g1{
+    .g2, .g1{
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
 
+    
 }
