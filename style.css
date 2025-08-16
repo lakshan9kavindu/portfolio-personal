@@ -435,6 +435,11 @@ a button{
     display: none;
 }
 
+    .boxbox h2{
+        font-size: 15px;
+        color: #F05454;
+    }
+
 
 @media only screen and (max-width: 600px) {
     .banner{
@@ -521,6 +526,7 @@ a button{
     }
 
         li{
+            padding: 5px;
         list-style: none;
     margin-left: auto;
     margin-right: auto;
@@ -530,6 +536,10 @@ a button{
         width: 30px;
         margin: 2px;
         height: auto;
+    }
+
+    .nBar .active{
+        color: black;
     }
 
 
